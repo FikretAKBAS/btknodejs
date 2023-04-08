@@ -40,7 +40,14 @@ var log = function (name) {
 
 // 4 - Dışarı Aktarılacak Öğeler tek tek aktarılabileceği gibi şu şekilde toplu bir biçimde de aktarılabilir.
 
+// module.exports = {
+//   name: firstName,
+//   log: log,
+// };
+
+// veya
+
 module.exports = {
-  name: firstName,
-  log: log,
+  firstName,
+  log,
 };
