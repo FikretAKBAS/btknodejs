@@ -18,7 +18,7 @@ app.use("/admin", adminRoutes);
 app.use(userRoutes);
 
 app.use((req, res) => {
-  res.sendFile(path.join(__dirname, "views", "404.html"));
+  res.status(404).render("404");
 });
 // app.get("/", (req, res) => {
 //   res.send("Hello World");
